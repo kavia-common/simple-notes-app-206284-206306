@@ -2,6 +2,58 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+---
+
+## 📝 Ocean Professional Notes App
+
+A beautiful modern notes application built with React. Supports create, edit, and delete for personal notes, with responsive design and vibrant Ocean Professional styling.
+
+### Features
+
+- Create notes via modal form (title, content)
+- Edit and update any note (changes persist via localStorage)
+- Delete note with confirmation dialog
+- Responsive grid-based layout
+- Ocean Professional theme (blue primary, amber accents, rounded corners, gradient, shadows, transitions)
+- Storage abstraction: Uses `localStorage` by default, but ready for REST API if `REACT_APP_API_BASE` or `REACT_APP_BACKEND_URL` envs are set
+
+### Usage
+
+1. **Run locally**
+   ```
+   npm install
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000).
+
+2. **Create or edit notes**
+   Click "+ New Note" or "Edit" on any note to open the editor modal. All notes are saved in localStorage for persistence.
+   
+3. **Delete notes**
+   Click "Delete" and confirm in the modal dialog.
+
+### Optional: API Storage
+
+If you set either environment variable in `.env`:
+
+- `REACT_APP_API_BASE=https://your-backend-url/api`
+- OR
+- `REACT_APP_BACKEND_URL=https://your-backend-url/api`
+
+then the app will use your backend for storage (API methods to be implemented). If these are not set, localStorage is used by default.
+
+### Styling
+
+Follows Ocean Professional color palette:
+
+- **Primary:** #2563EB
+- **Accent/Amber:** #F59E0B
+- Shadows, gradients, and transitions for modern depth
+
+See `src/App.css` for customization.
+
+---
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
